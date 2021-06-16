@@ -1,22 +1,1408 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Site administration | inalix</title>
 
-<h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
+<body class=" dashboard" data-admin-utc-offset="25200">
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+    <img class="brandlog branding-logo" src="Site%20administration%20inalix_files/logo-angkasa-pura_Lp99QFm.png">
+    <img class="brandlog branding-logo-dark" src="Site%20administration%20inalix_files/logo-angkasa-pura-dark.png">
+    <h1 id="site-name">AODB | Ahmad Yani International Airport (srg_cloud)</h1>
+    <div id="admin-tool-menu">
+      
+
+<script type="text/javascript" src="Site%20administration%20inalix_files/utils.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+    // Load js files syncronously and conditionally
+    var js_files = [
+        {
+            src : '/static/admin_tools/js/jquery/jquery.min.js',
+            test: function() { return typeof(jQuery) == 'undefined'; }
+        },
+        {
+            src : '/static/admin_tools/js/json.min.js',
+            test: function() { return typeof(JSON.stringify) == 'undefined'; }
+        },
+        {
+            src : '/static/admin_tools/js/menu.js',
+            test: function() { return true; }
+        }
+    ];
+
+    loadScripts(js_files, function(){
+        jQuery(function($) {
+            
+                process_bookmarks(
+                   "/en/admin/",
+                   "Site administration",
+                   "Please enter a name for the bookmark"
+                );
+            
+        });
+    });
+
+</script>
+<!--[if IE 6]>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#navigation-menu').children('li').hover(
+        function() { jQuery(this).addClass('over'); },
+        function() { jQuery(this).removeClass('over'); }
+    );
+});
+</script>
+<![endif]-->
+
+
+
+
+
+
+<form id="bookmark-form" action="/en/admin_tools/menu/add_bookmark/" method="POST">
+    <input type="hidden" name="next" value="/en/admin/">
+    <input type="hidden" name="url" value="/en/admin/">
+    <input type="hidden" name="title" value="Site administration">
+    <button id="bookmark-button" type="submit">Add</button>
+</form>
+
+
+
+
+
+<ul id="navigation-menu">
+    
+<li class="menu-item first"><a href="http://192.168.1.92/">Home</a></li>
+
+<li class="menu-item selected"><a href="http://192.168.1.92/en/admin/">Dashboard</a></li>
+
+<li class="menu-item disabled bookmark"><a href="#">Bookmarks</a></li>
+
+<li class="menu-item"><a href="#" class="has-icon">Applications</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/airline/" class="has-icon">Airline</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/airline/aircraft/">Aircrafts</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/airline/registration/">Aircrafts Registrations</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/airline/aircraftdesigngroup/">Airline Design Groups</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/airline/airline/">Airlines</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/airport/" class="has-icon">Airport</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/airport/airport/">Airports</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/airport/distance/">Airports Distances</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/amc/" class="has-icon">Amc</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/amc/flightbaydisplay/">Flight bay displays</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/authtoken/" class="has-icon">Auth Token</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/authtoken/token/">Tokens</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/" class="has-icon">Django CMS</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/globalpagepermission/">Pages global permissions</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/pageusergroup/">User groups (page)</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/pageuser/">Users (page)</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/pagetype/">Page types</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/page/">Pages</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/cms/staticplaceholder/">Static placeholders</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/dynamic_preferences/" class="has-icon">Dynamic Preferences</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/dynamic_preferences/globalpreferencemodel/">Global preferences</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/dynamic_preferences_users/" class="has-icon">Preferences - Users</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/dynamic_preferences_users/userpreferencemodel/">User preferences</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/filer/" class="has-icon">Filer</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/filer/folder/">Folders</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/filer/thumbnailoption/">Thumbnail options</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/" class="has-icon">Flight</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/flight/">Flights</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/resourcechangereason/">Resource Change Reasons</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/resourcekpiconfig/">Resource KPI Configs</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/flightstatus/">Statuses</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight/dailyspecialdesk/">Daily special desks</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight_pax/" class="has-icon">Flight Pax</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight_pax/flightpax/">Pax</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight_pax/flightpaxpods/">Pax Pots</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight_public/" class="has-icon">Flight_Public</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/flight_public/userairline/">User airlines</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/input/" class="has-icon">Input</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/input/inputaftn/">Input AFTN</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/input/input/">Inputs</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/input/inputnotam/">NOTAM</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/output/" class="has-icon">Output</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/output/outputconfig/">Output configs</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/output/outputfield/">Output fields</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/output/outputqueue/">Output queues</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/schedule/" class="has-icon">Schedule</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/schedule/scheduleseason/">Schedule Seasons</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/schedule/schedule/">Scheduled Flights</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/" class="has-icon">Terminal</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/terminalpreferencemodel/">Terminal Preferences</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/airlinedesk/">Airline desks</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/aviobridge/">Aviobridges</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/bay/">Bays</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/belt/">Belts</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/desk/">Desks</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/gate/">Gates</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/resourcemaintenance/">Resource maintenances</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/runway/">Runways</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/terminal/terminal/">Terminals</a></li></ul></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/webpush/" class="has-icon">Webpush</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/webpush/pushinformation/">Push informations</a></li></ul></li></ul></li>
+
+<li class="menu-item"><a href="#" class="has-icon">Administration</a><ul><li class="menu-item"><a href="http://192.168.1.92/en/admin/base/siteprofile/">Site Profiles</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/admin_manager/adminmanagerdisplay/">Admin manager displays</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/auth/group/">Groups</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/auth/user/">Users</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/constance/config/">Config</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/django_celery_beat/clockedschedule/">Clocked</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/django_celery_beat/crontabschedule/">Crontabs</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/django_celery_beat/intervalschedule/">Intervals</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/django_celery_beat/periodictask/">Periodic tasks</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/django_celery_beat/solarschedule/">Solar events</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/admin/logentry/">Log entries</a></li><li class="menu-item"><a href="http://192.168.1.92/en/admin/sites/site/">Sites</a></li></ul></li>
+
+<li class="menu-item"><a href="#" class="has-icon">Timezone WIB/Jakarta</a><ul><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_tz?tz=UTC">UTC</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_tz?tz=Etc/GMT-7">WIB/Jakarta</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_tz?tz=Etc/GMT-8">WITA/Makassar</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_tz?tz=Etc/GMT-9">WIT/Jayapura</a></li></ul></li>
+
+<li class="menu-item"><a href="#" class="has-icon">Group INFO</a><ul><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=2">KOMERSIL</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=4">AIRLINE</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=5">SUPERUSER</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=1">AMC</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=3">INFO</a></li><li class="menu-item"><a href="http://192.168.1.92/inalix_base/switch_group?group_id=6">ADM</a></li></ul></li>
+
+</ul>
+
+
+    </div>
+  
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>nanda</strong>.
+            
+            
+                
+                    <a href="http://192.168.1.92/">View site</a> /
+                
+                
+                    
+                    
+                        <a href="http://192.168.1.92/en/admin/doc/">Documentation</a> /
+                    
+                
+                
+                <a href="http://192.168.1.92/en/admin/password_change/">Change password</a> /
+                
+                <a href="http://192.168.1.92/en/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+  
+  <button id="webpush-subscribe-button" data-url="/webpush/save_information">
+    Subscribe to Push Messaging
+  </button>
+  <div id="webpush-message" hidden=""></div>
+
+
+  <div class="theme-chooser">
+      <label class="switch-theme">
+        <input type="checkbox">
+        <span class="slider round btn-theme-admin"></span>
+      </label>
   </div>
+
+    </div>
+    <!-- END Header -->
+    
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colMS">
+        
+        <h1>Site administration</h1>
+        
+<div id="content-main">
+
+
+    
+        <div class="app-admin_manager module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/admin_manager/" class="section" title="Models in the Admin Manager application">Admin Manager</a>
+        </caption>
+        
+            <tbody><tr class="model-adminmanagerdisplay">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/admin_manager/adminmanagerdisplay/">Admin manager displays</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/admin_manager/adminmanagerdisplay/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/admin_manager/adminmanagerdisplay/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-admin module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/admin/" class="section" title="Models in the Administration application">Administration</a>
+        </caption>
+        
+            <tbody><tr class="model-logentry">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/admin/logentry/">Log entries</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/admin/logentry/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/admin/logentry/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-airline module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/airline/" class="section" title="Models in the Airline application">Airline</a>
+        </caption>
+        
+            <tbody><tr class="model-aircraft">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airline/aircraft/">Aircrafts</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airline/aircraft/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airline/aircraft/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-registration">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airline/registration/">Aircrafts Registrations</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airline/registration/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airline/registration/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-aircraftdesigngroup">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airline/aircraftdesigngroup/">Airline Design Groups</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airline/aircraftdesigngroup/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airline/aircraftdesigngroup/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-airline">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airline/airline/">Airlines</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airline/airline/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airline/airline/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-airport module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/airport/" class="section" title="Models in the Airport application">Airport</a>
+        </caption>
+        
+            <tbody><tr class="model-airport">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airport/airport/">Airports</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airport/airport/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airport/airport/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-distance">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/airport/distance/">Airports Distances</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/airport/distance/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/airport/distance/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-amc module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/amc/" class="section" title="Models in the Amc application">Amc</a>
+        </caption>
+        
+            <tbody><tr class="model-flightbaydisplay">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/amc/flightbaydisplay/">Flight bay displays</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/amc/flightbaydisplay/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/amc/flightbaydisplay/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-authtoken module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/authtoken/" class="section" title="Models in the Auth Token application">Auth Token</a>
+        </caption>
+        
+            <tbody><tr class="model-token">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/authtoken/token/">Tokens</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/authtoken/token/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/authtoken/token/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-auth module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+            <tbody><tr class="model-group">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/auth/group/">Groups</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/auth/group/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-user">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/auth/user/">Users</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/auth/user/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-base module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/base/" class="section" title="Models in the Base application">Base</a>
+        </caption>
+        
+            <tbody><tr class="model-siteprofile">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/base/siteprofile/">Site Profiles</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/base/siteprofile/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/base/siteprofile/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-constance module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/constance/" class="section" title="Models in the Constance application">Constance</a>
+        </caption>
+        
+            <tbody><tr class="model-config">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/constance/config/">Config</a></th>
+            
+
+            
+                <td>&nbsp;</td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/constance/config/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-cms module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/cms/" class="section" title="Models in the django CMS application">django CMS</a>
+        </caption>
+        
+            <tbody><tr class="model-pagetype">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/pagetype/">Page types</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/pagetype/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/pagetype/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-page">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/page/">Pages</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/page/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/page/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-globalpagepermission">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/globalpagepermission/">Pages global permissions</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/globalpagepermission/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/globalpagepermission/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-staticplaceholder">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/staticplaceholder/">Static placeholders</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/staticplaceholder/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/staticplaceholder/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-pageusergroup">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/pageusergroup/">User groups (page)</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/pageusergroup/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/pageusergroup/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-pageuser">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/cms/pageuser/">Users (page)</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/cms/pageuser/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/cms/pageuser/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-dynamic_preferences module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/dynamic_preferences/" class="section" title="Models in the Dynamic Preferences application">Dynamic Preferences</a>
+        </caption>
+        
+            <tbody><tr class="model-globalpreferencemodel">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/dynamic_preferences/globalpreferencemodel/">Global preferences</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/dynamic_preferences/globalpreferencemodel/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/dynamic_preferences/globalpreferencemodel/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-filer module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/filer/" class="section" title="Models in the Filer application">Filer</a>
+        </caption>
+        
+            <tbody><tr class="model-folder">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/filer/folder/">Folders</a></th>
+            
+
+            
+                <td>&nbsp;</td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/filer/folder/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-thumbnailoption">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/filer/thumbnailoption/">Thumbnail options</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/filer/thumbnailoption/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/filer/thumbnailoption/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-flight module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/flight/" class="section" title="Models in the Flight application">Flight</a>
+        </caption>
+        
+            <tbody><tr class="model-dailyspecialdesk">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight/dailyspecialdesk/">Daily special desks</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight/dailyspecialdesk/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight/dailyspecialdesk/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-flight">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight/flight/">Flights</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight/flight/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight/flight/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-resourcechangereason">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight/resourcechangereason/">Resource Change Reasons</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight/resourcechangereason/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight/resourcechangereason/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-resourcekpiconfig">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight/resourcekpiconfig/">Resource KPI Configs</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight/resourcekpiconfig/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight/resourcekpiconfig/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-flightstatus">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight/flightstatus/">Statuses</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight/flightstatus/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight/flightstatus/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-flight_pax module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/flight_pax/" class="section" title="Models in the Flight Pax application">Flight Pax</a>
+        </caption>
+        
+            <tbody><tr class="model-flightpax">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight_pax/flightpax/">Pax</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight_pax/flightpax/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight_pax/flightpax/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-flightpaxpods">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight_pax/flightpaxpods/">Pax Pots</a></th>
+            
+
+            
+                <td>&nbsp;</td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight_pax/flightpaxpods/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-flight_public module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/flight_public/" class="section" title="Models in the Flight_Public application">Flight_Public</a>
+        </caption>
+        
+            <tbody><tr class="model-userairline">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/flight_public/userairline/">User airlines</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/flight_public/userairline/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/flight_public/userairline/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-input module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/input/" class="section" title="Models in the Input application">Input</a>
+        </caption>
+        
+            <tbody><tr class="model-inputaftn">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/input/inputaftn/">Input AFTN</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/input/inputaftn/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/input/inputaftn/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-input">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/input/input/">Inputs</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/input/input/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/input/input/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-inputnotam">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/input/inputnotam/">NOTAM</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/input/inputnotam/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/input/inputnotam/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-output module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/output/" class="section" title="Models in the Output application">Output</a>
+        </caption>
+        
+            <tbody><tr class="model-outputconfig">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/output/outputconfig/">Output configs</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/output/outputconfig/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/output/outputconfig/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-outputfield">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/output/outputfield/">Output fields</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/output/outputfield/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/output/outputfield/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-outputqueue">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/output/outputqueue/">Output queues</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/output/outputqueue/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/output/outputqueue/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-django_celery_beat module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/django_celery_beat/" class="section" title="Models in the Periodic Tasks application">Periodic Tasks</a>
+        </caption>
+        
+            <tbody><tr class="model-clockedschedule">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/django_celery_beat/clockedschedule/">Clocked</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/clockedschedule/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/clockedschedule/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-crontabschedule">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/django_celery_beat/crontabschedule/">Crontabs</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/crontabschedule/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/crontabschedule/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-intervalschedule">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/django_celery_beat/intervalschedule/">Intervals</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/intervalschedule/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/intervalschedule/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-periodictask">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/django_celery_beat/periodictask/">Periodic tasks</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/periodictask/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/periodictask/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-solarschedule">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/django_celery_beat/solarschedule/">Solar events</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/solarschedule/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/django_celery_beat/solarschedule/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-dynamic_preferences_users module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/dynamic_preferences_users/" class="section" title="Models in the Preferences - Users application">Preferences - Users</a>
+        </caption>
+        
+            <tbody><tr class="model-userpreferencemodel">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/dynamic_preferences_users/userpreferencemodel/">User preferences</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/dynamic_preferences_users/userpreferencemodel/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/dynamic_preferences_users/userpreferencemodel/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-schedule module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/schedule/" class="section" title="Models in the Schedule application">Schedule</a>
+        </caption>
+        
+            <tbody><tr class="model-scheduleseason">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/schedule/scheduleseason/">Schedule Seasons</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/schedule/scheduleseason/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/schedule/scheduleseason/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-schedule">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/schedule/schedule/">Scheduled Flights</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/schedule/schedule/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/schedule/schedule/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-sites module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/sites/" class="section" title="Models in the Sites application">Sites</a>
+        </caption>
+        
+            <tbody><tr class="model-site">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/sites/site/">Sites</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/sites/site/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/sites/site/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-terminal module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/terminal/" class="section" title="Models in the Terminal application">Terminal</a>
+        </caption>
+        
+            <tbody><tr class="model-airlinedesk">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/airlinedesk/">Airline desks</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/airlinedesk/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/airlinedesk/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-aviobridge">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/aviobridge/">Aviobridges</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/aviobridge/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/aviobridge/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-bay">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/bay/">Bays</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/bay/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/bay/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-belt">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/belt/">Belts</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/belt/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/belt/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-desk">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/desk/">Desks</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/desk/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/desk/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-gate">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/gate/">Gates</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/gate/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/gate/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-resourcemaintenance">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/resourcemaintenance/">Resource maintenances</a></th>
+            
+
+            
+                <td>&nbsp;</td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/resourcemaintenance/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-runway">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/runway/">Runways</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/runway/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/runway/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-terminalpreferencemodel">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/terminalpreferencemodel/">Terminal Preferences</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/terminalpreferencemodel/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/terminalpreferencemodel/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+            <tr class="model-terminal">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/terminal/terminal/">Terminals</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/terminal/terminal/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/terminal/terminal/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+        <div class="app-webpush module">
+        <table>
+        <caption>
+            <a href="http://192.168.1.92/en/admin/webpush/" class="section" title="Models in the Webpush application">Webpush</a>
+        </caption>
+        
+            <tbody><tr class="model-pushinformation">
+            
+                <th scope="row"><a href="http://192.168.1.92/en/admin/webpush/pushinformation/">Push informations</a></th>
+            
+
+            
+                <td><a href="http://192.168.1.92/en/admin/webpush/pushinformation/add/" class="addlink">Add</a></td>
+            
+
+            
+                
+                <td><a href="http://192.168.1.92/en/admin/webpush/pushinformation/" class="changelink">Change</a></td>
+                
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+    
+
 </div>
-<script src="js/script.js"></script>
-</body>
-</html>
+
+        
+<div id="content-related">
+    <div class="module" id="recent-actions-module">
+        <h2>Recent actions</h2>
+        <h3>My actions</h3>
+            
+            
+            
+            <ul class="actionlist">
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            <li class="changelink">
+                
+                    <a href="http://192.168.1.92/en/admin/flight/flight/249663/change/">WAHS-BTK6339 2021033123D</a>
+                
+                <br>
+                
+                    <span class="mini quiet">Flight</span>
+                
+            </li>
+            
+            </ul>
+            
+    </div>
+</div>
+
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+
+
+</body></html>
