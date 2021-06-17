@@ -1,25 +1,38 @@
 @primary-color: #3498DB;
 @secondary-color: #2980B9;
 @content-primary-color: #f1f1f1;
-@content-secondary-color: #ddd; 
-  
+@content-secondary-color: #ddd;
+
+.menu-container p {
+  cursor: pointer;
+  width: 40px;
+  img {
+    width: 40px;
+  }
+}
+ 
   .class-model-container {
     display: none;
-    background-color: @content-primary-color;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  }
+
+  .content-menu {
+    position: absolute;
+    left: 10%;
+    background-color: @primary-color;
   }
 
   .module {
-      cursor: pointer;
-      width: 50%;
-      background-color: @primary-color;
+    display: none;
+    width: 300px;
+    cursor: pointer;
+    .module-name {
+      height: 40px;
+    }
+    .model {
+      background-color: @secondary-color;
+    }
   }
   
   .model-adminmanagerdisplay a:hover {
-      background-color: @content-secondary-color;
-    }
-  
-  .show {display: block;}
+    background-color: @content-secondary-color;
+  }
