@@ -1,19 +1,18 @@
-function floatingButton() {
-    document.getElementById("tabel").classList.toggle("show");
-}
+/* document.getElementsByClassName("floating-menu").addEventListener("click", displayDate);
+function displayDate() {
+  console.log("klik");
+} */
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.section')) {
-      var dropdowns = document.getElementsByClassName("model-adminmanagerdisplay");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
+var dropdown = document.getElementsByClassName("module-name");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
   }
-
-  
+  });
+}
