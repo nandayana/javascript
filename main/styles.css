@@ -1,25 +1,22 @@
-.menu-container p {
-  cursor: pointer;
+img {
   width: 40px;
 }
-.menu-container p img {
-  width: 40px;
-}
-.class-model-container {
+.class-model-container,
+.content-menu,
+.list-model {
   display: none;
 }
 .content-menu {
   position: absolute;
-  left: 10%;
-  background-color: #3498DB;
 }
 .module {
-  display: none;
   width: 300px;
   cursor: pointer;
 }
 .module .module-name {
   height: 40px;
+  line-height: 40px;
+  width: 300px;
 }
 .module .model {
   background-color: #2980B9;

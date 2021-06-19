@@ -3,30 +3,25 @@
 @content-primary-color: #f1f1f1;
 @content-secondary-color: #ddd;
 
-.menu-container p {
-  cursor: pointer;
+img {
   width: 40px;
-  img {
-    width: 40px;
-  }
 }
  
-  .class-model-container {
+  .class-model-container, .content-menu, .list-model {
     display: none;
   }
 
   .content-menu {
     position: absolute;
-    left: 10%;
-    background-color: @primary-color;
   }
 
   .module {
-    display: none;
     width: 300px;
     cursor: pointer;
     .module-name {
       height: 40px;
+      line-height: 40px;
+      width: 300px;
     }
     .model {
       background-color: @secondary-color;

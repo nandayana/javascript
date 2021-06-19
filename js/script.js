@@ -1,4 +1,4 @@
-var menuButtonStatus = false;
+/* var menuButtonStatus = false;
 
 function mainMenuButton(){
   var menuList = document.querySelectorAll(".module");
@@ -14,28 +14,41 @@ function mainMenuButton(){
     }
     menuButtonStatus = false;
   }
-}
+} */
 
-var dropdown = document.getElementsByClassName("module-name");
-var i;
+dropDownMenu("floating-menu", 2);
+dropDownMenu("list-menu",2);
+dropDownMenu("module-name", 2);
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
+
+function dropDownMenu(className, typeMenu) {
+
+  var dropdown = document.getElementsByClassName(className);
+  var i;
+
+  if (typeMenu === 1) {
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      var dropdownContent  = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
   }
-  });
-}
+  else if (typeMenu === 2) {
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      var dropdownContent  = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+  }
 
-
-
-var f = document.getElementById("angka").textContent;
-console.log(f);
-var x = pengurangan(f);
-document.getElementById("hasil").innerHTML = x;
-function pengurangan (a){
-  return a-2;
 }
